@@ -1,0 +1,83 @@
+
+.title {
+    margin-bottom: 35px;
+    font-size: 36px;
+}
+.error {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 187px 258px 223px;
+    max-width: 668px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.columnTitle {
+    font-size: 24px;
+}
+
+.table {
+    position: relative;
+    height: 550px;
+    overflow-y: auto;
+    padding-right: 27px;
+}
+
+.table::-webkit-scrollbar {
+    width: 3px;
+    background: linear-gradient(
+            90deg,
+            transparent 33%,#FFFFFF 33%,
+            #FFFFFF 66%,
+            transparent 66%
+    );;
+}
+
+/* ползунок скроллбара */
+.table::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E75626;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 187px 258px 195px 28px;
+    padding: 16px 0;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.column {
+    font-family: Avenir Next Cyr;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.delete {
+    justify-self: end;
+    align-self: center;
+    width: 12px;
+    height: 12px;
+
+    cursor: pointer;
+}
+.delete:hover svg {
+    transform: rotate(180deg);
+}
+.delete svg {
+    transition: 0.3s;
+}
+.orange * {
+    color: #E75626;
+}
+.orange {
+    cursor: default;
+
+}
+
+.lastElement {
+    height: 2px;
+}

@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue"),
+    url('./assets/fonts/BebasNeue-Regular.ttf') format("truetype");
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "Avenir Next Cyr";
+    src: local("Avenir Next Cyr"),
+    url('./assets/fonts/avenirnextcyr-regular.ttf') format("truetype");
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+body {
+    background: #171719;
 }
 
-.App-link {
-  color: #61dafb;
+body, html {
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img, svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
+.container {
+    max-width: 1342px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+ul {
+    list-style: none;
+}
+
