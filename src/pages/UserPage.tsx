@@ -10,7 +10,7 @@ const UserPage = () => {
 
     const {id} = useParams<string>()
     const {data, isFetching, error} = userAPI.useFetchUserQuery(id)
-    console.log(error)
+
     return (
         <div className={'container ' + s.userPageContainer}>
             {isFetching && <Preloader/>}
